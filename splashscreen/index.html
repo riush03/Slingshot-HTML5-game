@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=uft-8">
+        <title>Froot Wars</title>
+        <script src="js/game.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="styles.css" type="text/css" media="screen">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="gameContainer">
+
+                <canvas id="gameCanvas" width="640" height="480" class="gamelayer">
+                </canvas>
+
+                <div id="scorescreen" class="gamelayer">
+                    <img id="toggleMusic" src="22.png" alt="Toggle Music">
+                    <img scr="36.png" alt="Restart Level">
+                    <span id="score">Score: 0</span>
+                </div>
+
+                <div id="gamestartscreen" class="gamelayer">
+                    <img src="images/icons/play.png" alt="Play Game" onclick="game.showLevelScreen()"><br>
+                    <img src="images/icons/settings.png" alt="Settings">
+                </div>
+
+                <div id="levelselectscreen" class="gamelayer">
+                </div>
+
+                <div id="loadingscreen" class="gamelayer">
+                    <div id="loadingmessage"></div>
+                </div>
+
+                <div id="endingscreen" class="gamelayer">
+                    <div>
+                        <p id="endingmessage">The Level is Over Message</p>
+                        <p id="playcurrentlevel" class="endingoption">
+                            <img src="22.png" alt="Replay">
+                            Replay current level
+                        </p>
+
+                        <p id="playnextlevel" class="endingoption">
+                            <img src="36.png" alt="Next">
+                            Play Next Level
+                        </p>
+
+                        <p id="returntolevelscreen" class="endingoption">
+                            <img src="36.png" alt="Next">
+                            Return to level screens
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
